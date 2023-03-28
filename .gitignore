@@ -6,3 +6,6 @@ obj
 TestResult.xml
 *.VisualState.xml
 *.Publish.xml
+Source/.vs
+Source/Backup
+

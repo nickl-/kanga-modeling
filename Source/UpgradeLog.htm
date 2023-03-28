@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - KangaModeling</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#KangaModeling.Web">KangaModeling.Web</a></strong></td><td>KangaModeling.Web\KangaModeling.Web.csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#KangaModeling.WebWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('KangaModeling.Web'); return false;">71</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#KangaModeling.Web.Api">KangaModeling.Web.Api</a></strong></td><td>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#KangaModeling.Web.ApiWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('KangaModeling.Web.Api'); return false;">17</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>KangaModeling.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#00 Solution Items">00 Solution Items</a></strong></td><td>00 Solution Items</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#01 Compiler">01 Compiler</a></strong></td><td>01 Compiler</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#02 Graphics">02 Graphics</a></strong></td><td>02 Graphics</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#03 Facade">03 Facade</a></strong></td><td>03 Facade</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#04 Runners">04 Runners</a></strong></td><td>04 Runners</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="KangaModeling.Web" /><h3>KangaModeling.Web</h3><table><tr id="KangaModeling.WebHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassKangaModeling.Web"><td class="IconWarningEncoded"><a name="KangaModeling.WebWarning" /></td><td class="messageCell"><strong>KangaModeling.Web\KangaModeling.Web.csproj:
+        </strong><span>ASP.NET MVC 3 projects have limited functionality in Visual Studio 2019. Intellisense for Razor files (CSHTML and VBHTML) may be unavailable or limited and you may see errors in the Error List dialog when editing these files. Commands such as Add Controller, Add View, Add Area, and Go to View/Controller are not available. Please see https://go.microsoft.com/fwlink/?LinkID=317645 for additional information on how to upgrade an MVC 3 project.</span></td></tr><tr name="MessageRowHeaderShowKangaModeling.Web"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="KangaModeling.WebMessage" onclick="ToggleMessageVisibility('KangaModeling.Web'); return false;">
+          Show 71 additional messages
+        </a></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\KangaModeling.Web.csproj:
+        </strong><span>Project file successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\KangaModeling.Web.csproj</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\KangaModeling.Web.csproj.user:
+        </strong><span>Project user file successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\KangaModeling.Web.csproj.user</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Controllers\HomeController.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Controllers\HomeController.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Global.asax.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Global.asax.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Properties\AssemblyInfo.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Properties\AssemblyInfo.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Images\Logo.png:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Images\Logo.png</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\jquery.linedtextarea.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\jquery.linedtextarea.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCore.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCore.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreDefault.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreDefault.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreDjango.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreDjango.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreEclipse.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreEclipse.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreEmacs.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreEmacs.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreFadeToGrey.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreFadeToGrey.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreMDUltra.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreMDUltra.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreMidnight.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreMidnight.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreRDark.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shCoreRDark.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeDefault.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeDefault.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeDjango.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeDjango.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeEclipse.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeEclipse.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeEmacs.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeEmacs.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeFadeToGrey.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeFadeToGrey.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeMDUltra.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeMDUltra.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeMidnight.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeMidnight.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeRDark.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\SyntaxHighlighter\shThemeRDark.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Global.asax:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Global.asax</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Content\Stylesheets\Site.css:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Content\Stylesheets\Site.css</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\JQuery\jquery-1.5.1-vsdoc.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\JQuery\jquery-1.5.1-vsdoc.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\JQuery\jquery-1.5.1.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\JQuery\jquery-1.5.1.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\JQuery\jquery-1.5.1.min.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\JQuery\jquery-1.5.1.min.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\JQuery\jquery.linedtextarea.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\JQuery\jquery.linedtextarea.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\JQuery\jquery.waitforimages.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\JQuery\jquery.waitforimages.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\index.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\index.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shAutoloader.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shAutoloader.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushAppleScript.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushAppleScript.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushAS3.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushAS3.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushBash.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushBash.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushColdFusion.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushColdFusion.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCpp.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCpp.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCSharp.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCSharp.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCss.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushCss.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushDelphi.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushDelphi.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushDiff.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushDiff.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushErlang.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushErlang.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushGroovy.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushGroovy.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJava.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJava.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJavaFX.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJavaFX.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJScript.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushJScript.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPerl.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPerl.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPhp.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPhp.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPlain.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPlain.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPowerShell.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPowerShell.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPython.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushPython.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushRuby.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushRuby.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushSass.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushSass.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushScala.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushScala.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushSql.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushSql.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushVb.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushVb.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushXml.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shBrushXml.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shCore.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shCore.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Scripts\SyntaxHighlighter\shLegacy.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Scripts\SyntaxHighlighter\shLegacy.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Web.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Web.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Web.Debug.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Web.Debug.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Web.Release.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Web.Release.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Views\Web.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Views\Web.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Views\_ViewStart.cshtml:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Views\_ViewStart.cshtml</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Views\Shared\Error.cshtml:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Views\Shared\Error.cshtml</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Views\Shared\_Layout.cshtml:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Views\Shared\_Layout.cshtml</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\packages.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\packages.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\Views\Home\Index.cshtml:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web\Views\Home\Index.cshtml</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\KangaModeling.Web.csproj:
+        </strong><span>Project migrated successfully</span></td></tr><tr name="MessageRowClassKangaModeling.Web" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.WebMessage" /></td><td class="messageCell"><strong>KangaModeling.Web\KangaModeling.Web.csproj:
+        </strong><span>Scan complete: Migration not required for project files.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideKangaModeling.Web"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="KangaModeling.WebMessage" onclick="ToggleMessageVisibility('KangaModeling.Web'); return false;">
+          Hide 71 additional messages
+        </a></td></tr></table><a name="KangaModeling.Web.Api" /><h3>KangaModeling.Web.Api</h3><table><tr id="KangaModeling.Web.ApiHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassKangaModeling.Web.Api"><td class="IconWarningEncoded"><a name="KangaModeling.Web.ApiWarning" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj:
+        </strong><span>ASP.NET MVC 3 projects have limited functionality in Visual Studio 2019. Intellisense for Razor files (CSHTML and VBHTML) may be unavailable or limited and you may see errors in the Error List dialog when editing these files. Commands such as Add Controller, Add View, Add Area, and Go to View/Controller are not available. Please see https://go.microsoft.com/fwlink/?LinkID=317645 for additional information on how to upgrade an MVC 3 project.</span></td></tr><tr name="MessageRowHeaderShowKangaModeling.Web.Api"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="KangaModeling.Web.ApiMessage" onclick="ToggleMessageVisibility('KangaModeling.Web.Api'); return false;">
+          Show 17 additional messages
+        </a></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj:
+        </strong><span>Project file successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\KangaModeling.Web.Api.csproj</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj.user:
+        </strong><span>Project user file successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\KangaModeling.Web.Api.csproj.user</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Controllers\AllowCrossSiteJsonAttribute.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Controllers\AllowCrossSiteJsonAttribute.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Controllers\ApiController.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Controllers\ApiController.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Global.asax.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Global.asax.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Properties\AssemblyInfo.cs:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Properties\AssemblyInfo.cs</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Global.asax:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Global.asax</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Scripts\jquery-1.5.1-vsdoc.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Scripts\jquery-1.5.1-vsdoc.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Scripts\kanga.js:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Scripts\kanga.js</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Web.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Web.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Web.Debug.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Web.Debug.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Web.Release.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Web.Release.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Views\Web.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Views\Web.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\packages.config:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\packages.config</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\Views\Api\Help.cshtml:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.Web.Api\Views\Api\Help.cshtml</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj:
+        </strong><span>Project migrated successfully</span></td></tr><tr name="MessageRowClassKangaModeling.Web.Api" style="display: none"><td class="IconInfoEncoded"><a name="KangaModeling.Web.ApiMessage" /></td><td class="messageCell"><strong>KangaModeling.Web.Api\KangaModeling.Web.Api.csproj:
+        </strong><span>Scan complete: Migration not required for project files.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideKangaModeling.Web.Api"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="KangaModeling.Web.ApiMessage" onclick="ToggleMessageVisibility('KangaModeling.Web.Api'); return false;">
+          Hide 17 additional messages
+        </a></td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>KangaModeling.sln:
+        </strong><span>Visual Studio needs to make non-functional changes to this project in order to enable the project to open in released versions of Visual Studio newer than Visual Studio 2010 SP1 without impacting project behavior.</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>KangaModeling.sln:
+        </strong><span>File successfully backed up as C:\code\kanga-modeling\Source\Backup\KangaModeling.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>KangaModeling.sln:
+        </strong><span>Solution migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="00 Solution Items" /><h3>00 Solution Items</h3><table><tr id="00 Solution ItemsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">00 Solution Items logged no messages.
+                  </td></tr></table><a name="01 Compiler" /><h3>01 Compiler</h3><table><tr id="01 CompilerHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">01 Compiler logged no messages.
+                  </td></tr></table><a name="02 Graphics" /><h3>02 Graphics</h3><table><tr id="02 GraphicsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">02 Graphics logged no messages.
+                  </td></tr></table><a name="03 Facade" /><h3>03 Facade</h3><table><tr id="03 FacadeHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">03 Facade logged no messages.
+                  </td></tr></table><a name="04 Runners" /><h3>04 Runners</h3><table><tr id="04 RunnersHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">04 Runners logged no messages.
+                  </td></tr></table></div></div></body></html>

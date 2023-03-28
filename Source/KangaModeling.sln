@@ -1,11 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Compiler", "01 Compiler", "{A7D2EFF2-9234-4529-BFF5-6C01A6893A1A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Compiler", "KangaModeling.Compiler\KangaModeling.Compiler.csproj", "{397211EE-513B-428C-81DE-B9739B113170}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Compiler.Test", "KangaModeling.Compiler.Test\KangaModeling.Compiler.Test.csproj", "{6D912773-33FC-4E1F-AAD3-803B4C054865}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Graphics", "02 Graphics", "{BBF5AB3C-A94B-410F-B68C-8C4CCB5159BA}"
 EndProject
@@ -17,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Solution Items", "00 Sol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Runners", "04 Runners", "{3517360B-7BE8-465D-AE4D-1B95A45E934E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Facade", "03 Facade", "{6E758006-184E-4175-9938-16C46CE4830A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Compiler", "KangaModeling.Compiler\KangaModeling.Compiler.csproj", "{397211EE-513B-428C-81DE-B9739B113170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Compiler.Test", "KangaModeling.Compiler.Test\KangaModeling.Compiler.Test.csproj", "{6D912773-33FC-4E1F-AAD3-803B4C054865}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Gui", "KangaModeling.Gui\KangaModeling.Gui.csproj", "{77312AEB-91AB-4209-8113-AD115CB1A866}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Graphics", "KangaModeling.Graphics\KangaModeling.Graphics.csproj", "{3F1A9174-8957-4963-8476-DE00B0F25238}"
@@ -26,8 +30,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.CommandLine", "KangaModeling.CommandLine\KangaModeling.CommandLine.csproj", "{9E4FDDD1-5CCA-4793-ACAC-F6B0ABD57BC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Visuals.Test", "KangaModeling.Visuals.Test\KangaModeling.Visuals.Test.csproj", "{3E0599A5-94B0-4D13-AB4B-D4A22A07C8D1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Facade", "03 Facade", "{6E758006-184E-4175-9938-16C46CE4830A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KangaModeling.Facade", "KangaModeling.Facade\KangaModeling.Facade.csproj", "{B8B9203B-7981-4392-A866-06E3CE56F986}"
 EndProject
@@ -154,14 +156,17 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{397211EE-513B-428C-81DE-B9739B113170} = {A7D2EFF2-9234-4529-BFF5-6C01A6893A1A}
 		{6D912773-33FC-4E1F-AAD3-803B4C054865} = {A7D2EFF2-9234-4529-BFF5-6C01A6893A1A}
+		{77312AEB-91AB-4209-8113-AD115CB1A866} = {3517360B-7BE8-465D-AE4D-1B95A45E934E}
 		{3F1A9174-8957-4963-8476-DE00B0F25238} = {BBF5AB3C-A94B-410F-B68C-8C4CCB5159BA}
 		{600612BA-558D-4B21-A8FA-6CBD4471C8E1} = {BBF5AB3C-A94B-410F-B68C-8C4CCB5159BA}
-		{3E0599A5-94B0-4D13-AB4B-D4A22A07C8D1} = {BBF5AB3C-A94B-410F-B68C-8C4CCB5159BA}
-		{77312AEB-91AB-4209-8113-AD115CB1A866} = {3517360B-7BE8-465D-AE4D-1B95A45E934E}
 		{9E4FDDD1-5CCA-4793-ACAC-F6B0ABD57BC5} = {3517360B-7BE8-465D-AE4D-1B95A45E934E}
+		{3E0599A5-94B0-4D13-AB4B-D4A22A07C8D1} = {BBF5AB3C-A94B-410F-B68C-8C4CCB5159BA}
+		{B8B9203B-7981-4392-A866-06E3CE56F986} = {6E758006-184E-4175-9938-16C46CE4830A}
 		{53407E0D-4806-4B6D-B4BF-9822522B94F0} = {3517360B-7BE8-465D-AE4D-1B95A45E934E}
 		{1C35A339-CFE6-40D7-BAA5-B718963E5292} = {3517360B-7BE8-465D-AE4D-1B95A45E934E}
-		{B8B9203B-7981-4392-A866-06E3CE56F986} = {6E758006-184E-4175-9938-16C46CE4830A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6966AB27-FB4B-4228-B5F5-6654955C5070}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = KangaModeling.Compiler.Test\KangaModeling.Compiler.Test.csproj
